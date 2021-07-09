@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Sezion header - topbar */
+/* Sezione header - topbar */
 
 
 nav {
@@ -31,7 +31,7 @@ nav li a {
 }
 
 nav ul li:nth-child(3) {
-    padding-right: 830px;
+    padding-right: 820px;
 }
 
 nav ul li:nth-child(7) {
@@ -44,8 +44,37 @@ nav ul li:nth-child(7) a {
     background-color: blue;
 }
 
+           /* Sezione principale  */
+
+/* Sezione principale - JUMBOTRON */
+
+.jumbtron-l-r-content {
+    width: 100%;
+}
+
+.jumbotron-left,
+.jumbotron-right {
+    width: 50%;
+}
+.jumbotron-right {
+    margin-top: 80px;
+}
+
+.jumbotron-right img {
+    width: 100%;
+}
+
+.fa-arrow-down {
+    width: 100%;
+}
+
+/* -------------DA QUI IN POI SOLO ID------------- */
+
+
+/* Sezione header - topbar  */
+
 #topbar {
-    width: 100vw;
+    width: 100%;
     height: 70px;
     padding: 0 15px;
 }
@@ -57,4 +86,39 @@ nav ul li:nth-child(7) a {
 
 #logo img {
     vertical-align: middle;
+}
+
+/* Sezione JUMBOTRON */
+
+#jumbotron {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(135, 201, 221);
+    padding: 60px 150px;
+}
+
+#jumbotron h1 {
+    font-size: 48px;
+    text-align: left;
+}
+
+#down-arrow-container {
+    width: 50px;
+    height: 50px;
+}
+
+/* -------------SOLO REGOLE GENERALI------------- */
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.fl {
+   float: left;
+}
+
+.fr {
+    float: right;
 }
