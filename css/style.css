@@ -243,6 +243,33 @@ nav ul li:nth-child(7) a:hover {
 
 /* Sezione principale - Operazioni Dropbox Business */
 
+.operations {
+    width: 100%;
+}
+
+.operation {
+    width: 33.3%;
+}
+
+.operation-image-container {
+    width: 100%;
+}
+
+.operation-image-container img {
+    width: 80%;
+}
+
+.operation-text {
+    padding: 10px 10px 50px;
+}
+
+.operation h3 {
+    font-size: 1.2em;
+}
+
+/* Sezione principale - TEAMS */
+
+
 
 
 /* -------------DA QUI IN POI SOLO ID------------- */
@@ -290,6 +317,12 @@ nav ul li:nth-child(7) a:hover {
 }
 
 /* Sezione principale - Operazioni Dropbox Business */ 
+
+
+/* Sezione principale - TEAMS */
+
+
+
 
 
 
