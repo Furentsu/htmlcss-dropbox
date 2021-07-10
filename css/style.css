@@ -92,12 +92,12 @@ nav ul li:nth-child(7) a:hover {
 
 /* Sezione principale - Abbonamenti */
 
-.main-container h2 {
+.centered-container h2 {
     font-size: 2.2em;
     margin-bottom: 50px;
 }
 
-.main-container label {
+.centered-container label {
     padding-right: 20px;
 }
 
@@ -269,8 +269,81 @@ nav ul li:nth-child(7) a:hover {
 
 /* Sezione principale - TEAMS */
 
+.teams-top {
+    width: 40%;
+}
+
+.teams-top h1 {
+    font-size: 2em;
+}
+
+.teams-top p {
+    padding: 30px 0 50px 0;
+}
 
 
+/* Struttura sezione e quadratone a sinistra */
+
+.teams-100vw-container {
+    width: 100vw;
+    position: relative;
+}
+
+.teams-100vw-container .big-square{
+    width: 33.3%;
+    height: 600px;
+}
+
+.teams-image-square {
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+.teams-image-square > img {
+    width: 50%;
+}
+
+.teams-image-square.left:nth-of-type(1) {
+    background-color: limegreen;
+}
+
+.teams-image-square.left:nth-of-type(2) {
+    background-color: maroon;
+}
+
+.teams-image-square.left:nth-of-type(3) {
+    background-color:mediumturquoise;
+}
+
+.teams-image-square.left:nth-of-type(4) {
+    background-color:orange;
+}
+
+/* Quadratone centrale */
+
+.centered {
+    background-color: lightgrey;
+}
+
+
+/* Quadratone a destra */
+
+.teams-image-square.right:nth-of-type(1) {
+    background-color: red;
+}
+
+.teams-image-square.right:nth-of-type(2) {
+    background-color: lightskyblue;
+}
+
+.teams-image-square.right:nth-of-type(3) {
+    background-color:blue;
+}
+
+.teams-image-square.right:nth-of-type(4) {
+    background-color:yellow;
+}
 
 /* -------------DA QUI IN POI SOLO ID------------- */
 
@@ -356,10 +429,16 @@ nav ul li:nth-child(7) a:hover {
     background-color: orange;
 }
 
-.main-container {
+.centered-container {
     width: 70%;
     margin: 0 auto;
     padding: 200px 0 0;
 }
 
+.absolutely-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
