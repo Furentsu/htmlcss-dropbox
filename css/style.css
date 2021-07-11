@@ -393,6 +393,31 @@ nav ul li:nth-child(7) a:hover {
 
 /* Sezione Q&A */
 
+.q-a {
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid lightgray;
+    position: relative;
+}
+
+.q-a h3 {
+    padding-bottom: 50px;
+    font-size: 1.5em;
+}
+
+.q-a h4 {
+    padding: 30px 30px 0 0;
+}
+
+.q-a .fas.fa-angle-down {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 1.5em;
+}
+
+/* Sezione Footer */
+
 
 
 /* -------------DA QUI IN POI SOLO ID------------- */
@@ -448,6 +473,7 @@ nav ul li:nth-child(7) a:hover {
 /* Sezione Q&A */
 
 
+/* Sezione Footer */
 
 
 /* -------------SOLO REGOLE GENERALI------------- */
