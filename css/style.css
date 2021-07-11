@@ -194,7 +194,7 @@ nav ul li:nth-child(7) a:hover {
     /* Ultima opzione di abbonamento - ENTERPRISE */
 
 .enterprise-left h3 {
-    padding: 10px;
+    padding: 10px 0 10px 0;
 }
 
 .enterprise-left p {
@@ -281,11 +281,12 @@ nav ul li:nth-child(7) a:hover {
     padding: 30px 0 50px 0;
 }
 
-
 /* Struttura sezione e quadratone a sinistra */
 
 .teams-100vw-container {
     width: 100vw;
+    height: 1000px;
+    background-color: lightskyblue;
     position: relative;
 }
 
@@ -326,6 +327,29 @@ nav ul li:nth-child(7) a:hover {
     background-color: lightgrey;
 }
 
+.centered .centered-content {
+    padding: 30px;
+    height: 100%;
+    position: relative;
+}
+
+.centered .centered-content img {
+    width: 30%;
+    padding-bottom: 80px;
+}
+
+.centered .centered-content p::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10%;
+    top: 125px;
+    border: 1px solid rgb(204, 193, 193);
+}
+
+.centered .centered-content p {
+    padding-bottom: 50px;
+}
 
 /* Quadratone a destra */
 
@@ -344,6 +368,32 @@ nav ul li:nth-child(7) a:hover {
 .teams-image-square.right:nth-of-type(4) {
     background-color:yellow;
 }
+
+
+/* Sezione teams bottom */
+
+.teams-bottom div {
+    height: 100%;
+}
+
+.teams-bottom.centered-container {
+    padding-top: 800px;
+    height: 100%;
+}
+
+.teams-bottom.centered-container h1 {
+    font-size: 2em;
+    color: maroon;
+}
+
+.teams-bottom-left {
+    width: 30%;
+}
+
+
+/* Sezione Q&A */
+
+
 
 /* -------------DA QUI IN POI SOLO ID------------- */
 
@@ -395,13 +445,14 @@ nav ul li:nth-child(7) a:hover {
 /* Sezione principale - TEAMS */
 
 
+/* Sezione Q&A */
 
 
 
 
 /* -------------SOLO REGOLE GENERALI------------- */
 
-.clearfix {
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
