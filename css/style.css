@@ -418,7 +418,59 @@ nav ul li:nth-child(7) a:hover {
 
 /* Sezione Footer */
 
+.footer-content-container {
+    width: 100vw;
+    height: 600px;
+    background-color: black;
+    margin-top: 200px;
+    padding: 100px 100px 0;
+}
 
+.footer-all-list-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 75%;
+    position: relative;
+}
+
+.footer-single-list-container {
+    width: 20%;
+}
+
+.footer-single-list-container ul {
+    padding: 50px;
+}
+
+.footer-single-list-container ul:first-child {
+    padding-left: 0;
+}
+
+.footer-single-list-container ul li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.footer-single-list-container ul li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-single-list-container ul li:first-child {
+    padding-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-all-list-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgb(204, 193, 193);
+}
 
 /* -------------DA QUI IN POI SOLO ID------------- */
 
@@ -475,6 +527,23 @@ nav ul li:nth-child(7) a:hover {
 
 /* Sezione Footer */
 
+
+/* Sezione footer - selezione lingua */
+
+#language-selection {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+}
+
+#language-selection .fa-sort-down {
+    vertical-align: top;
+}
+
+#language-selection span {
+    padding: 5px;
+}
 
 /* -------------SOLO REGOLE GENERALI------------- */
 
