@@ -79,7 +79,7 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .jumbotron-right {
-    margin-top: 30px;
+    margin-top: -75px;
 }
 
 .jumbotron-right img {
@@ -93,7 +93,7 @@ nav ul li:nth-child(7) a:hover {
 /* Sezione principale - Abbonamenti */
 
 .centered-container h2 {
-    font-size: 2.2em;
+    font-size: 2.35em;
     margin-bottom: 50px;
 }
 
@@ -107,7 +107,7 @@ nav ul li:nth-child(7) a:hover {
 
 .billing-options {
     width: 100%;
-    margin: 35px 0 25px;
+    margin: 35px 0 50px;
 }
 
 .billing-option {
@@ -116,6 +116,7 @@ nav ul li:nth-child(7) a:hover {
 
 .billing-option-text {
     padding: 30px 30px 0 30px;
+    min-height: 1000px;
 }
 
 .billing-option-text h3 {
@@ -150,13 +151,18 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .billing-option-text ul li > span {
-    width: 95%;
+    width: 92%;
     padding-left: 5px;
+}
+
+.billing-option-text p > a {
+    text-decoration: none;
+    color: #51a7ee;
 }
 
 .billing-option-text .main-button {
     width: 100%;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .gray-line {
@@ -194,7 +200,8 @@ nav ul li:nth-child(7) a:hover {
     /* Ultima opzione di abbonamento - ENTERPRISE */
 
 .enterprise-left h3 {
-    padding: 10px 0 10px 0;
+    font-size: 1.55em;
+    padding-bottom: 10px;
 }
 
 .enterprise-left p {
@@ -205,37 +212,49 @@ nav ul li:nth-child(7) a:hover {
     font-weight: 600;
 }
 
-/* Sezione principale - Partner */
-
-.partner-section .fl,
-.partner-section .fr {
-    width: 50%;
+.enterprise-right {
+    width: 25%;
 }
 
-.partner-section .fl > img {
+.enterprise-right > button {
     width: 100%;
 }
 
-.partner-section .fr {
+/* Sezione principale - Partner */
+
+.partner-section .partner-section-left {
+    width: 50%;
+}
+
+.partner-section .partner-section-left > img {
+    width: 100%;
+}
+
+.partner-section-right {
+    width: 40%;
+}
+
+.partner-section .partner-section-right {
     padding: 35px 60px;
 }
 
-.partner-section .fr h3 {
+.partner-section .partner-section-right h3 {
     font-size: 1.5em;
 }
 
-.partner-section .fr p {
+.partner-section .partner-section-right p {
     padding: 25px 0;
+    line-height: 27px;
 }
 
-.partner-section .fr button {
+.partner-section .partner-section-right button {
     background-color: white;
     color: black;
     border: 1px solid black;
     transition: all 0.3s ease-in-out;
 }
 
-.partner-section .fr button:hover {
+.partner-section .partner-section-right button:hover {
     color: white;
     background-color: rgb(69, 69, 235);
     border: 1px solid rgb(69, 69, 235);
@@ -248,23 +267,47 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .operation {
+    min-height: 550px;
+}
+
+.operations .operation:nth-child(1),
+.operations .operation:nth-child(3),
+.operations .operation:nth-child(4),
+.operations .operation:nth-child(6) {
+    width: calc(33.3% - 50px);
+}
+
+.operations .operation:nth-child(2),
+.operations .operation:nth-child(5) {
     width: 33.3%;
+    margin: 0 50px;
 }
 
 .operation-image-container {
     width: 100%;
+    text-align: center;
 }
 
 .operation-image-container img {
-    width: 80%;
+    width: 100%;
+}
+
+.operations .operation:nth-child(2) img,
+.operations .operation:nth-child(5) img {
+    width: 90%;
 }
 
 .operation-text {
-    padding: 10px 10px 50px;
+    text-align: left;
 }
 
 .operation h3 {
-    font-size: 1.2em;
+    font-size: 1.45em;
+    margin-bottom: 20px;
+}
+
+.operation p {
+    line-height: 25px;
 }
 
 /* Sezione principale - TEAMS */
@@ -281,19 +324,28 @@ nav ul li:nth-child(7) a:hover {
     padding: 30px 0 50px 0;
 }
 
+.teams-top a {
+    text-decoration: none;
+    color: #51a7ee;
+}
+
 /* Struttura sezione e quadratone a sinistra */
 
 .teams-100vw-container {
     width: 100vw;
-    height: 1000px;
-    background-color: lightskyblue;
+    height: 1060px;
+    background-color: #b4d0e7;
     position: relative;
 }
 
 .teams-100vw-container .big-square{
-    width: 33.3%;
+    width: 30%;
     height: 600px;
 }
+
+.teams-100vw-container .centered.big-square {
+    width: 40%;
+} 
 
 .teams-image-square {
     width: 50%;
@@ -328,13 +380,13 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .centered .centered-content {
-    padding: 30px;
+    padding: 40px;
     height: 100%;
     position: relative;
 }
 
 .centered .centered-content img {
-    width: 30%;
+    width: 25%;
     padding-bottom: 80px;
 }
 
@@ -349,6 +401,7 @@ nav ul li:nth-child(7) a:hover {
 
 .centered .centered-content p {
     padding-bottom: 50px;
+    line-height: 25px;
 }
 
 /* Quadratone a destra */
@@ -386,6 +439,19 @@ nav ul li:nth-child(7) a:hover {
     color: maroon;
 }
 
+.teams-bottom.centered-container button {
+    width: 25%;
+    background-color: white;
+    color: black;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.teams-bottom.centered-container button:hover {
+    color: white;
+    background-color: rgb(69, 69, 235);
+}
+
 .teams-bottom-left {
     width: 30%;
 }
@@ -402,7 +468,7 @@ nav ul li:nth-child(7) a:hover {
 
 .q-a h3 {
     padding-bottom: 50px;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .q-a h4 {
@@ -496,20 +562,25 @@ nav ul li:nth-child(7) a:hover {
 
 #jumbotron {
     width: 100%;
-    height: 600px;
-    background-color: rgb(135, 201, 221);
+    height: 625px;
+    background-color: #b4d0e7;
     padding: 50px 150px;
 }
 
 #jumbotron h1 {
-    font-size: 3em;
+    font-size: 4.2em;
     text-align: left;
+}
+
+#down-arrow-container a {
+    color: black;
 }
 
 /* Sezione principale - Abbonamenti */
 
 #enterprise-billing {
     width: 100%;
+    min-height: 220px;
 }
 
 #enterprise-billing-bottom {
