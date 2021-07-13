@@ -41,7 +41,7 @@ nav ul li:nth-child(7) {
 nav ul li:nth-child(7) a {
     padding: 5px 15px;
     color: white;
-    background-color: rgb(69, 69, 235);
+    background-color: #2a61ff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -56,6 +56,7 @@ nav ul li:nth-child(7) a:hover {
 
 .jumbtron-l-r-content {
     width: 100%;
+    height: 600px;
 }
 
 .jumbotron-left {
@@ -67,19 +68,25 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .jumbotron-left {
-    padding: 30px 180px 0 0;
+    padding: 0 180px 0 0;
 }
 
 .jumbotron-left .main-button {
     margin: 25px 0 10px;
 } 
 
+.jumbotron-left p:nth-of-type(1) {
+    line-height: 25px;
+    padding: 30px 0 10px 0;
+}
+
 .jumbotron-left p:nth-of-type(2) {
+    font-size: 15px;
     margin-bottom: 50px;
 }
 
 .jumbotron-right {
-    margin-top: -75px;
+    margin-top: 30px;
 }
 
 .jumbotron-right img {
@@ -175,7 +182,7 @@ nav ul li:nth-child(7) a:hover {
     position: absolute;
     width: 20%;
     top: 50px;
-    border: 1px solid rgb(204, 193, 193);
+    border: 1px solid #d0d0d3;
 }
 
 .billing-options .billing-option:nth-child(1) {
@@ -200,12 +207,12 @@ nav ul li:nth-child(7) a:hover {
     /* Ultima opzione di abbonamento - ENTERPRISE */
 
 .enterprise-left h3 {
-    font-size: 1.55em;
+    font-size: 1.5em;
     padding-bottom: 10px;
 }
 
 .enterprise-left p {
-    padding: 20px 0;
+    padding: 26px 0 28px;
 }
 
 .enterprise-left span {
@@ -235,7 +242,7 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .partner-section .partner-section-right {
-    padding: 35px 60px;
+    padding: 35px 0 0;
 }
 
 .partner-section .partner-section-right h3 {
@@ -256,8 +263,8 @@ nav ul li:nth-child(7) a:hover {
 
 .partner-section .partner-section-right button:hover {
     color: white;
-    background-color: rgb(69, 69, 235);
-    border: 1px solid rgb(69, 69, 235);
+    background-color: #2a61ff;
+    border: 1px solid #2a61ff;
 }
 
 /* Sezione principale - Operazioni Dropbox Business */
@@ -333,14 +340,14 @@ nav ul li:nth-child(7) a:hover {
 
 .teams-100vw-container {
     width: 100vw;
-    height: 1060px;
+    height: 850px;
     background-color: #b4d0e7;
     position: relative;
 }
 
 .teams-100vw-container .big-square{
     width: 30%;
-    height: 600px;
+    height: 500px;
 }
 
 .teams-100vw-container .centered.big-square {
@@ -349,38 +356,39 @@ nav ul li:nth-child(7) a:hover {
 
 .teams-image-square {
     width: 50%;
-    height: 300px;
+    height: 250px;
     position: relative;
 }
 
 .teams-image-square > img {
     width: 50%;
+    filter: invert(100%);
 }
 
 .teams-image-square.left:nth-of-type(1) {
-    background-color: limegreen;
+    background-color: #a2d39b;
 }
 
 .teams-image-square.left:nth-of-type(2) {
-    background-color: maroon;
+    background-color: #61082a;
 }
 
 .teams-image-square.left:nth-of-type(3) {
-    background-color:mediumturquoise;
+    background-color:#3193ce;
 }
 
 .teams-image-square.left:nth-of-type(4) {
-    background-color:orange;
+    background-color:#f51c1f;
 }
 
 /* Quadratone centrale */
 
 .centered {
-    background-color: lightgrey;
+    background-color: #f5f5f5;
 }
 
 .centered .centered-content {
-    padding: 40px;
+    padding: 50px;
     height: 100%;
     position: relative;
 }
@@ -407,19 +415,19 @@ nav ul li:nth-child(7) a:hover {
 /* Quadratone a destra */
 
 .teams-image-square.right:nth-of-type(1) {
-    background-color: red;
+    background-color: #d5001e;
 }
 
 .teams-image-square.right:nth-of-type(2) {
-    background-color: lightskyblue;
+    background-color: #b4d0e7;
 }
 
 .teams-image-square.right:nth-of-type(3) {
-    background-color:blue;
+    background-color:#0e2481;
 }
 
 .teams-image-square.right:nth-of-type(4) {
-    background-color:yellow;
+    background-color:#fbd831;
 }
 
 
@@ -430,7 +438,7 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .teams-bottom.centered-container {
-    padding-top: 800px;
+    padding-top: 630px;
     height: 100%;
 }
 
@@ -449,11 +457,11 @@ nav ul li:nth-child(7) a:hover {
 
 .teams-bottom.centered-container button:hover {
     color: white;
-    background-color: rgb(69, 69, 235);
+    background-color: #2a61ff;
 }
 
 .teams-bottom-left {
-    width: 30%;
+    width: 40%;
 }
 
 
@@ -503,8 +511,14 @@ nav ul li:nth-child(7) a:hover {
     width: 20%;
 }
 
+.footer-single-list-container h3 {
+    color: white;
+    font-size: 1.1em;
+    padding-bottom: 25px;
+}
+
 .footer-single-list-container ul {
-    padding: 50px;
+    padding: 0px;
 }
 
 .footer-single-list-container ul:first-child {
@@ -521,12 +535,12 @@ nav ul li:nth-child(7) a:hover {
     text-decoration: none;
 }
 
-.footer-single-list-container ul li:first-child {
+/* .footer-single-list-container ul li:first-child {
     padding-bottom: 15px;
     font-size: 1.1em;
     font-weight: 600;
     color: white;
-}
+} */
 
 .footer-all-list-container::after {
     content: '';
@@ -535,7 +549,7 @@ nav ul li:nth-child(7) a:hover {
     width: 8%;
     bottom: 0;
     left: 0;
-    border: 1px solid rgb(204, 193, 193);
+    border: 1px solid #d0d0d3;
 }
 
 /* -------------DA QUI IN POI SOLO ID------------- */
@@ -562,13 +576,14 @@ nav ul li:nth-child(7) a:hover {
 
 #jumbotron {
     width: 100%;
-    height: 625px;
+    height: 700px;
     background-color: #b4d0e7;
-    padding: 50px 150px;
+    padding: 75px 150px;
 }
 
 #jumbotron h1 {
-    font-size: 4.2em;
+    font-size: 4em;
+    width: 70%;
     text-align: left;
 }
 
@@ -580,7 +595,6 @@ nav ul li:nth-child(7) a:hover {
 
 #enterprise-billing {
     width: 100%;
-    min-height: 220px;
 }
 
 #enterprise-billing-bottom {
@@ -634,7 +648,7 @@ nav ul li:nth-child(7) a:hover {
 
 .main-button {
     padding: 8px 15px;
-    background-color: rgb(69, 69, 235);
+    background-color: #2a61ff;
     font-size: 1em;
     color: white;
     border: none;
@@ -647,9 +661,23 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .centered-container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
-    padding: 200px 0 0;
+    padding: 180px 0 0;
+}
+
+    /* Spazio tra le singole sezioni */
+
+main section:nth-of-type(2) .centered-container {
+    padding-top: 250px;
+}
+
+main section:nth-of-type(3) .centered-container {
+    padding-bottom: 0;
+}
+
+main section:nth-of-type(4) .centered-container {
+    padding-top: 150px;
 }
 
 .absolutely-centered {
