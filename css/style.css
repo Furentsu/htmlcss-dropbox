@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header - topbar */
@@ -87,10 +88,6 @@ nav ul li:nth-child(7) a:hover {
 
 .jumbotron-right img {
     width: 100%;
-}
-
-.fa-arrow-down {
-    font-size: 2.5em;
 }
 
             /* Main  */
@@ -240,7 +237,7 @@ nav ul li:nth-child(7) a:hover {
     width: 25%;
 }
 
-.enterprise-right > button {
+.enterprise-right > .main-button {
     width: 100%;
 }
 
@@ -600,6 +597,15 @@ nav ul li:nth-child(7) a:hover {
     color: black;
 }
 
+#down-arrow-container > a .fa-arrow-down {
+    font-size: 2.5em;
+    transition: all 250ms ease-in-out;
+}
+
+#down-arrow-container > a .fa-arrow-down:hover {
+    color: orange;
+}
+
 /* Main - Opzioni di abbonamento - Professional, Standard, Advanced  */
 
 #enterprise-billing {
@@ -667,9 +673,13 @@ nav ul li:nth-child(7) a:hover {
 
     /* Spazio tra le singole sezioni */
 
+    /* Spazio tra header e main-sezione Opzioni di abbonamento  */
+
 main section:nth-of-type(1) .centered-container {
     padding-top: 250px;
 }
+
+    /* Spazio tra main-sezione Partner e main-Operazioni Dropbox Business  */
 
 main section:nth-of-type(2) .centered-container {
     padding-bottom: 0;
@@ -686,3 +696,43 @@ main section:nth-of-type(3) .centered-container {
     transform: translate(-50%, -50%);
 }
 
+/* Animazione dei link */
+
+.fancy-link {
+    text-decoration: none;
+    position: relative;
+}
+
+.fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #dadada;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Animazione dei link nel footer */
+
+footer .fancy-link::after {
+    background: white;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+}
+
+footer .fancy-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
