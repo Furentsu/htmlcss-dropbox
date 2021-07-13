@@ -8,8 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Sezione header - topbar */
-
+/* Header - topbar */
 
 nav {
     display: inline-block;
@@ -49,12 +48,9 @@ nav ul li:nth-child(7) a:hover {
     background-color: orange;
 }
 
+/* Header - Jumbotron */
 
-           /* Sezione principale  */
-
-/* Sezione principale - JUMBOTRON */
-
-.jumbtron-l-r-content {
+.jumbotron-l-r-content {
     width: 100%;
     height: 600px;
 }
@@ -97,7 +93,9 @@ nav ul li:nth-child(7) a:hover {
     font-size: 2.5em;
 }
 
-/* Sezione principale - Abbonamenti */
+            /* Main  */
+
+/* Main - Opzioni di abbonamento - Professional, Standard, Advanced  */
 
 .centered-container h2 {
     font-size: 2.35em;
@@ -200,16 +198,17 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .billing-options .billing-option:nth-child(1) {
-    width: calc(33.3% - 25px);
+    width: calc(33.3% - 30px);
+    margin-right: 30px;
 }
 
 .billing-options .billing-option:nth-child(2) {
     width: 33.3%;
-    margin: 0 25px;
 }
 
 .billing-options .billing-option:nth-child(3) {
-    width: calc(33.3% - 25px);
+    width: calc(33.3% - 30px);
+    margin-left: 30px;
 }
 
 .billing-option .billing-icon {
@@ -218,7 +217,11 @@ nav ul li:nth-child(7) a:hover {
     padding: 10px;
 }
 
-    /* Ultima opzione di abbonamento - ENTERPRISE */
+.billing-option ul .fas.fa-check {
+    color: #2a61ff;
+}
+
+/* Main - Opzioni di abbonamento - Enterprise */
 
 .enterprise-left h3 {
     font-size: 1.5em;
@@ -241,7 +244,7 @@ nav ul li:nth-child(7) a:hover {
     width: 100%;
 }
 
-/* Sezione principale - Partner */
+/* Main - Sezione partner */
 
 .partner-section .partner-section-left {
     width: 50%;
@@ -281,7 +284,7 @@ nav ul li:nth-child(7) a:hover {
     border: 1px solid #2a61ff;
 }
 
-/* Sezione principale - Operazioni Dropbox Business */
+/* Main - Sezione Operazioni Dropbox Business */
 
 .operations {
     width: 100%;
@@ -331,7 +334,7 @@ nav ul li:nth-child(7) a:hover {
     line-height: 25px;
 }
 
-/* Sezione principale - TEAMS */
+/* Main - Sezione teams */
 
 .teams-top {
     width: 40%;
@@ -350,7 +353,7 @@ nav ul li:nth-child(7) a:hover {
     color: #51a7ee;
 }
 
-/* Struttura sezione e quadratone a sinistra */
+/* Sezione teams - Struttura generale e quadratone a sinistra */
 
 .teams-100vw-container {
     width: 100vw;
@@ -395,7 +398,7 @@ nav ul li:nth-child(7) a:hover {
     background-color:#f51c1f;
 }
 
-/* Quadratone centrale */
+/* Sezione teams - Quadratone centrale */
 
 .centered {
     background-color: #f5f5f5;
@@ -426,7 +429,7 @@ nav ul li:nth-child(7) a:hover {
     line-height: 25px;
 }
 
-/* Quadratone a destra */
+/* Sezione teams - Quadratone a destra */
 
 .teams-image-square.right:nth-of-type(1) {
     background-color: #d5001e;
@@ -444,8 +447,7 @@ nav ul li:nth-child(7) a:hover {
     background-color:#fbd831;
 }
 
-
-/* Sezione teams bottom */
+/* Sezione teams - bottom */
 
 .teams-bottom div {
     height: 100%;
@@ -478,26 +480,25 @@ nav ul li:nth-child(7) a:hover {
     width: 40%;
 }
 
+/* Main - Sezione FAQs */
 
-/* Sezione Q&A */
-
-.q-a {
+.faqs {
     width: 100%;
     height: 80px;
     border-bottom: 2px solid lightgray;
     position: relative;
 }
 
-.q-a h3 {
+.faqs h3 {
     padding-bottom: 50px;
     font-size: 1.75em;
 }
 
-.q-a h4 {
+.faqs h4 {
     padding: 30px 30px 0 0;
 }
 
-.q-a .fas.fa-angle-down {
+.faqs .fas.fa-angle-down {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -549,12 +550,7 @@ nav ul li:nth-child(7) a:hover {
     text-decoration: none;
 }
 
-/* .footer-single-list-container ul li:first-child {
-    padding-bottom: 15px;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: white;
-} */
+/* Footer - Selezione lingua */
 
 .footer-all-list-container::after {
     content: '';
@@ -568,8 +564,7 @@ nav ul li:nth-child(7) a:hover {
 
 /* -------------DA QUI IN POI SOLO ID------------- */
 
-
-/* Sezione header - topbar  */
+/* Header - topbar */
 
 #topbar {
     width: 100%;
@@ -586,7 +581,7 @@ nav ul li:nth-child(7) a:hover {
     vertical-align: middle;
 }
 
-/* Sezione JUMBOTRON */
+/* Header - Jumbotron */
 
 #jumbotron {
     width: 100%;
@@ -605,7 +600,7 @@ nav ul li:nth-child(7) a:hover {
     color: black;
 }
 
-/* Sezione principale - Abbonamenti */
+/* Main - Opzioni di abbonamento - Professional, Standard, Advanced  */
 
 #enterprise-billing {
     width: 100%;
@@ -615,19 +610,9 @@ nav ul li:nth-child(7) a:hover {
     padding: 20px;
 }
 
-/* Sezione principale - Operazioni Dropbox Business */ 
+                /* Sezione Footer */
 
-
-/* Sezione principale - TEAMS */
-
-
-/* Sezione Q&A */
-
-
-/* Sezione Footer */
-
-
-/* Sezione footer - selezione lingua */
+/* Footer - Selezione lingua */
 
 #language-selection {
     width: 90%;
@@ -682,15 +667,15 @@ nav ul li:nth-child(7) a:hover {
 
     /* Spazio tra le singole sezioni */
 
-main section:nth-of-type(2) .centered-container {
+main section:nth-of-type(1) .centered-container {
     padding-top: 250px;
 }
 
-main section:nth-of-type(3) .centered-container {
+main section:nth-of-type(2) .centered-container {
     padding-bottom: 0;
 }
 
-main section:nth-of-type(4) .centered-container {
+main section:nth-of-type(3) .centered-container {
     padding-top: 150px;
 }
 
