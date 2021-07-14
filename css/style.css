@@ -127,7 +127,7 @@ nav ul li:nth-child(7) a:hover {
 }
 
 .billing-option {
-    border: 1px solid lightgrey;
+    border: 1px solid #d0d0d3;
 }
 
 .billing-option-text {
@@ -242,7 +242,6 @@ nav ul li:nth-child(7) a:hover {
 }
 
 /* Main - Sezione partner */
-
 .partner-section .partner-section-left {
     width: 50%;
 }
@@ -561,6 +560,13 @@ nav ul li:nth-child(7) a:hover {
 
 /* -------------DA QUI IN POI SOLO ID------------- */
 
+/* Contenitore dell'intera pagina, per evitare che i valori in % di width possano dare problemi */
+
+#page-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 /* Header - topbar */
 
 #topbar {
@@ -673,13 +679,13 @@ nav ul li:nth-child(7) a:hover {
 
     /* Spazio tra le singole sezioni */
 
-    /* Spazio tra header e main-sezione Opzioni di abbonamento  */
+    /* Spazio tra header e main-sezione Opzioni di abbonamento */
 
 main section:nth-of-type(1) .centered-container {
     padding-top: 250px;
 }
 
-    /* Spazio tra main-sezione Partner e main-Operazioni Dropbox Business  */
+    /* Spazio tra main-sezione Partner e main-Operazioni Dropbox Business */
 
 main section:nth-of-type(2) .centered-container {
     padding-bottom: 0;
